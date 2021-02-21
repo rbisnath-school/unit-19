@@ -1,0 +1,238 @@
+
+.logo {
+    background: white;
+    height: 553px;
+    background-image: url("../images/rb-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;    
+
+}
+
+.bubbles {
+    height: 553px;
+    background-image: url("../images/bubbles.png");
+    background-repeat: no-repeat;
+    background-position: center;    
+
+}
+
+.nav {
+    display: flex;
+    background-color: #739FE8;
+    border-radius: 10px;
+    font-family: "Anton", sans-serif;
+    color: white;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+
+}
+
+h1 {
+    font-family: "Anton", sans-serif; 
+    color: #091B9A;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.left a {
+    padding-left: 20px;
+}
+
+.right {
+    font-size: x-large;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #091B9A;
+    border-radius: 10px;    
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+}
+
+
+
+
+.flexContainer {
+    display: flex;
+}
+
+
+.skillContainer {
+    width: 33%;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+}
+
+.skillContainer img {
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+
+}
+
+.skillText {
+    background-color: #091B9A;
+    color: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: left;
+}
+
+
+
+.skillText h3 {
+    font-family: "Anton", sans-serif;
+    color: white;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+
+.skillText p{
+    font-family: "Roboto", sans-serif;
+    color: white; 
+    font-size: 10pt;
+    margin: 0px;
+}
+
+.myWork h3 {
+    text-align: center;
+
+
+}
+
+.myWork a{ 
+    font-family: "Anton", sans-serif;
+    color: #091B9A;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns:  1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "leftImage rightText"
+    "leftImage2 rightText2";
+
+    row-gap: 10px;
+
+    
+}
+
+.leftImage {
+    grid-column: 1;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+}
+
+.rightText {
+    grid-column: 2;
+
+    background-color: #091B9A;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;    
+    padding: 20px;    
+}
+
+.leftImage img {
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+}
+
+
+
+.rightText h4 {
+    font-family: "Anton", sans-serif;
+    color: white;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.rightText p {
+    font-family: "Roboto", sans-serif;
+    color: white; 
+    font-size: 10pt;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.rightText button {
+    background-color: #739FE8;
+    font-family: "Anton", sans-serif;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    font-size: 12pt;
+
+
+}
+
+
+
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    background-color: #739FE8;
+    border-radius: 10px;
+    font-family: "Anton", sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        background: white;
+        background-image: url("../images/rb-logo600.png");
+        background-repeat: no-repeat;
+        background-position: center;   
+        height: 248px;
+
+    
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .skillContainer {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: lightgrey;
+        border-width: 1px;
+
+    }
+
+}
+
+
