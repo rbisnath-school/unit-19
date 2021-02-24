@@ -8,13 +8,15 @@
 
 }
 
-.bubbles {
-    height: 553px;
-    background-image: url("../images/bubbles.png");
-    background-repeat: no-repeat;
-    background-position: center;    
 
-}
+.bubbles {
+    background: url(../images/bubbles.png);
+    width: 100%;
+    margin: 0;
+    height: 553px;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+  }
 
 .nav {
     display: flex;
@@ -235,4 +237,7 @@ h1 {
 
 }
 
-
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 0 -400px; }
+}
