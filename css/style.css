@@ -8,6 +8,12 @@
 
 }
 
+#cta {
+    display: none;
+    cursor:pointer;
+    
+}
+
 
 .bubbles {
     background: url(../images/bubbles.png);
@@ -210,6 +216,11 @@ h1 {
     height: 50px;
 }
 
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 0 -553px; }
+}
+
 @media only screen and (max-width: 600px) {
     .logo {
         background: white;
@@ -220,6 +231,16 @@ h1 {
 
     
     }
+
+    .bubbles {
+        background: url(../images/tinybubbles.png);
+        width: 100%;
+        margin: 0;
+        height: 248px;
+        box-sizing: border-box;
+        -webkit-animation: slide 20s linear infinite;
+      }
+
     .flexContainer {
         display: flex;
         flex-direction: column;
@@ -235,9 +256,4 @@ h1 {
 
     }
 
-}
-
-@-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: 0 -400px; }
 }
